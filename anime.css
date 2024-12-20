@@ -134,6 +134,10 @@ p {
         padding: 10px;
     }
 
+    .header h1 {
+        font-size: 30px; /* Ajuste para pantallas pequeñas */
+    }
+
     .video-principal, .lista-videos {
         padding: 15px;
     }
@@ -154,6 +158,12 @@ p {
     /* Ajustes de imagen para pantallas pequeñas */
     .imagen-principal {
         max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustar el tamaño del video en pantallas pequeñas */
+    .video-principal iframe {
+        width: 100%;
         height: auto;
     }
 }
