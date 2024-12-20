@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATO ANIME</title>
+    <!-- Enlazamos la hoja de estilo que se encuentra en la carpeta "estilo" -->
+    <link rel="stylesheet" href="estilo/anime.css"> <!-- Ruta correcta -->
+</head>
+<body>
+
+    <header class="header">
+        <h1>GATO ANIME</h1>
+    </header>
+
+    <section class="video-principal">
+        <h2>Shigatsu Wa Kimi no Uso</h2>
+        <div class="imagen-container">
+            <!-- Imagen en la carpeta imagenes -->
+            <img src="imagenes/1.jpg" alt="Shigatsu Wa Kimi no Uso" width="100%">
+        </div>
+    </section>
+
+    <section class="lista-videos">
+        <h2>EPISODIOS</h2>
+        <ul>
+            <li>
+                <a href="video1.html" class="video-link">
+                    Video 1
+                </a>
+            </li>
+            <li>
+                <a href="video2.html" class="video-link">
+                    Video 2
+                </a>
+            </li>
+            <li>
+                <a href="video3.html" class="video-link">
+                    Video 3
+                </a>
+            </li>
+            <li>
+                <a href="video4.html" class="video-link">
+                    Video 4
+                </a>
+            </li>
+            <li>
+                <a href="video5.html" class="video-link">
+                    Video 5
+                </a>
+            </li>
+            <li>
+                <a href="video6.html" class="video-link">
+                    Video 6
+                </a>
+            </li>
+            <li>
+                <a href="video7.html" class="video-link">
+                    Video 7
+                </a>
+            </li>
+            <li>
+                <a href="video8.html" class="video-link">
+                    Video 8
+                </a>
+            </li>
+            <li>
+                <a href="video9.html" class="video-link">
+                    Video 9
+                </a>
+            </li>
+            <li>
+                <a href="video10.html" class="video-link">
+                    Video 10
+                </a>
+            </li>
+            <li>
+                <a href="video11.html" class="video-link">
+                    Video 11
+                </a>
+            </li>
+            <li>
+                <a href="video12.html" class="video-link">
+                    Video 12
+                </a>
+            </li>
+            <li>
+                <a href="video13.html" class="video-link">
+                    Video 13
+                </a>
+            </li>
+            <li>
+                <a href="video14.html" class="video-link">
+                    Video 14
+                </a>
+            </li>
+            <li>
+                <a href="video15.html" class="video-link">
+                    Video 15
+                </a>
+            </li>
+            <li>
+                <a href="video16.html" class="video-link">
+                    Video 16
+                </a>
+            </li>
+            <li>
+                <a href="video17.html" class="video-link">
+                    Video 17
+                </a>
+            </li>
+            <li>
+                <a href="video18.html" class="video-link">
+                    Video 18
+                </a>
+            </li>
+            <li>
+                <a href="video19.html" class="video-link">
+                    Video 19
+                </a>
+            </li>
+            <li>
+                <a href="video20.html" class="video-link">
+                    Video 20
+                </a>
+            </li>
+            <li>
+                <a href="video21.html" class="video-link">
+                    Video 21
+                </a>
+            </li>
+            <li>
+                <a href="video22.html" class="video-link">
+                    Video 22
+                </a>
+            </li>
+            <li>
+                <a href="video23.html" class="video-link">
+                    Video 23
+                </a>
+            </li>
+        </ul>
+    </section>
+
+   <!-- Botón flotante para controlar la música -->
+   <button class="music-button" id="music-control">🌸</button>
+
+   <!-- Elemento de audio para la música de fondo -->
+   <audio id="background-music" loop>
+       <source src="musica/HikaruNara.mp3" type="audio/mp3"> <!-- Cambia la ruta de la música -->
+       Tu navegador no soporta el elemento de audio.
+   </audio>
+
+   <script>
+       const audioElement = document.getElementById('background-music');
+       const musicButton = document.getElementById('music-control');
+       let isPlaying = true;
+
+       // Función para alternar reproducción/pausa
+       musicButton.addEventListener('click', () => {
+           if (isPlaying) {
+            audioElement.play();
+            musicButton.textContent = "🎵"; // Cambiar ícono al reproducir  
+
+           } else {
+            audioElement.pause();
+            musicButton.textContent = "🔇"; // Cambiar ícono al pausar
+           }
+           isPlaying = !isPlaying; // Alternar estado
+       });
+
+       // Comprobar si la música está bloqueada por el navegador
+       document.addEventListener('DOMContentLoaded', () => {
+           if (audioElement.paused) {
+               audioElement.play().catch(() => {
+                   console.log('La reproducción automática está bloqueada.');
+               });
+           }
+       });
+   </script>
+
+</body>
+</html>
+    
