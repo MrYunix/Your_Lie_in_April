@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video 18 - Portal de Videos Anime</title>
-    <link rel="stylesheet" href="estilo/anime.css"> <!-- Ruta CSS -->
+    <title>GATO ANIME</title>
+    <link rel="stylesheet" href="anime.css"> <!-- Ruta CSS -->
 </head>
 <body>
 
     <header class="header">
-        <h1>Video 18 - Portal de Videos Anime</h1>
+        <h1>Episodio 18 - GATO ANIME</h1>
     </header>
 
+    <!-- Sección de video principal -->
     <div class="section-video">
+
+        <!-- Sección de navegación -->
         <section class="navegacion">
-            <a href="anime.html"><button class="btn-navegacion">Volver a la lista de videos</button></a>
+            <a href="index.html"><button class="btn-navegacion">Volver a la lista de videos</button></a>
             <a href="video17.html"><button class="btn-navegacion">Video Anterior</button></a>
             <a href="video19.html"><button class="btn-navegacion">Video Siguiente</button></a>
         </section>
@@ -23,10 +26,11 @@
     <div class="section-video">
         <section class="video-principal">
             <div class="video-container">
-                <video width="100%" controls>
-                    <source src="videos/18.mp4" type="video/mp4"> <!-- Video -->
-                    Tu navegador no soporta el formato de video.
-                </video>
+                <!-- Incrustar el video de Google Drive usando <iframe> con soporte para pantalla completa -->
+                <iframe src="https://drive.google.com/file/d/1CKBGnQlPgTRqnpJBXk_Ip4kzCUrT7KR7/preview" 
+                        allow="autoplay; fullscreen" 
+                        allowfullscreen="true" 
+                        style="width: 100%; height: 300px;"></iframe>
             </div>
         </section>
     </div>
