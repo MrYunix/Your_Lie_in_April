@@ -1,0 +1,238 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ffbc00; /* Color dorado brillante */
+}
+
+/* Header */
+.header {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-bottom: 3px solid #ffbc00;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+/* Sección principal de video */
+.video-principal {
+    background-color: #333333;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 660px;
+    text-align: center;
+}
+
+.video-principal h2 {
+    color: #ffbc00;
+    margin-bottom: 10px;
+}
+
+.imagen-container {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container {
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de lista de videos */
+.lista-videos {
+    background-color: #444444;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista-videos h2 {
+    color: #ffbc00;
+    margin-bottom: 20px;
+}
+
+.lista-videos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-videos ul li {
+    margin-bottom: 10px;
+}
+
+.video-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.video-link:hover {
+    color: #ffbc00;
+    text-shadow: 0px 0px 10px rgba(255, 188, 0, 0.7);
+}
+
+/* Estilo de botones de navegación */
+.navegacion {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.btn-navegacion {
+    background-color: #ffbc00;
+    color: #1e1e1e;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-navegacion:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+/* Estilo para mejorar la lectura de textos */
+p {
+    font-size: 16px;
+    color: #dddddd;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* Adaptación para móviles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .video-principal, .lista-videos {
+        padding: 15px;
+    }
+
+    .video-principal h2, .lista-videos h2 {
+        font-size: 22px;
+    }
+
+    .video-link {
+        font-size: 16px;
+    }
+
+    .btn-navegacion {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Estilo para los bloques de video en la lista */
+.lista-videos ul {
+    list-style-type: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+}
+
+.lista-videos li {
+    background-color: #444444;  /* Fondo gris para cada bloque */
+    border-radius: 8px;         /* Bordes redondeados */
+    margin: 10px 0;             /* Separación entre los bloques */
+    padding: 15px;              /* Espaciado interno dentro del bloque */
+    border: 2px solid #333333; /* Borde gris más oscuro para cada bloque */
+    transition: background-color 0.3s ease; /* Efecto suave para el hover */
+}
+
+.lista-videos li:hover {
+    background-color: #555555; /* Cambiar el color de fondo cuando se pasa el ratón */
+}
+
+/* Estilo para los enlaces dentro de los elementos de la lista */
+.video-link {
+    color: white;              /* Texto blanco */
+    text-decoration: none;     /* Quitamos el subrayado */
+    font-size: 18px;           /* Tamaño de fuente más grande */
+    font-weight: bold;         /* Hacemos el texto en negrita */
+    display: block;            /* Hace que el enlace ocupe todo el bloque */
+    padding: 10px 0;           /* Relleno interno para el enlace */
+}
+
+/* Cambiar el color del enlace al pasar el ratón */
+.video-link:hover {
+    color: #FF6F61;            /* Cambiamos el color del texto al pasar el ratón */
+}
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* Estilo del botón de música flotante */
+.music-button {
+    position: fixed; /* Para que siempre esté visible en la pantalla */
+    bottom: 20px; /* Espaciado desde la parte inferior */
+    right: 20px; /* Espaciado desde el lado derecho */
+    background-color: #606060; /* Color de fondo */
+    color: white; /* Color del texto/ícono */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Botón redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    font-size: 24px; /* Tamaño del ícono/texto */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    cursor: pointer; /* Cambiar el cursor al pasar */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    z-index: 1000; /* Para asegurarse de que esté por encima de otros elementos */
+}
+
+.music-button:hover {
+    background-color: #acacac; /* Color al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.music-button:active {
+    transform: scale(0.95); /* Efecto de clic */
+}
